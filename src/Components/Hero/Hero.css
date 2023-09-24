@@ -1,0 +1,106 @@
+.hero{
+    
+    padding: 30px;
+}
+
+.hero .box{
+    padding: 10px;
+    display: flex;
+}
+
+.hero .box .img{
+    flex: 4;
+    height: 450px;
+    width: 2700px;
+    margin-left: 30px;
+}
+
+.hero .box .img img{
+    animation: float 4.5s ease-in-out infinite;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.hero .box .content{
+    width: 100%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero .box .content p{
+    font-weight: 200;
+    font-size: 25px;
+}
+
+
+.button button{
+    cursor: pointer;
+    padding: 10px;
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: #5EC9CC;
+    border: none;
+    transition: 0.5s;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+   
+}
+.button button:hover{
+    transform: scale(1.087);
+}
+
+@media (max-width: 780px) {
+    .hero .box {
+        display: flex;
+      flex-direction: column;
+      align-items:center;
+      
+    }
+    .hero .box .button{
+        text-align: center;
+    }
+    .hero .box .button button{
+        margin: 10px 0;
+    }
+
+    .hero .box .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero .box .img{
+        width: 770px;
+        height: 400px;
+    }
+    @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+  
+    
+  }

@@ -1,0 +1,67 @@
+.colleges{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right,#FAF3F3 , white,#B6FFF0);
+}
+.colleges-outer h1{
+text-align: center;
+margin: 20px 0;
+}
+
+.colleges .box{
+    transition: 0.5s;
+    width: 250px;
+    min-height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 2px grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.colleges .box:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    transform: translateY(-2px);
+}
+.colleges .box h3{
+    text-align: center;
+    text-transform: none;
+    list-style: none;
+    
+    width: auto;
+}
+.colleges .box p{
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+
+.colleges-outer{
+    text-align: center;
+    
+}
+
+.colleges-outer input{
+    margin: 15px 0;
+    height: 40px;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid lightslategray;
+}
+
+.colleges-outer input:focus,.colleges-outer input:active{
+    border-color: darkgray;
+    
+}

@@ -1,0 +1,32 @@
+.courses{ 
+    
+    background-image: linear-gradient(to right,#FAF3F3 , white,#B6FFF0);
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.courses h1{
+    font-size: 40px;
+
+}
+
+.exams{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+
+}
+.mba{
+    height:380px;
+margin: 60px;
+    box-shadow:  0 0 2px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.mba h1{
+    margin: 5px 0;
+}
+.mba ul li{
+margin: 3px 0;
+}
