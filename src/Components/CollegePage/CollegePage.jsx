@@ -4,14 +4,13 @@ import List from "../../List.json"
 import { useParams } from 'react-router-dom'
 
 const CollegePage = () => {
-    const { collegeIndex } = useParams();
-  const selectedIndex = parseInt(collegeIndex);
-  const selectedCollege = List[selectedIndex]
+    const { college_name } = useParams();
+  const selectedCollege = List.find((college) => college?.college_name === college_name);
   if (!selectedCollege) {
     return <div>College not found</div>;
   }
   return (
-    <div className='details'>
+    <div className='details' key={selectedCollege?.college_name}>
       <h1>College Details</h1>
       <h2>{selectedCollege.college_name}</h2>
       <span>{selectedCollege.City} , {selectedCollege.State}</span>
